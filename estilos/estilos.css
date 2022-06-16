@@ -1,0 +1,116 @@
+/*{
+    margin: 0%;
+    padding: 0%;
+}
+*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Rubik:wght@300&family=Water+Brush&display=swap");
+ul li {
+  color: aquamarine;
+}
+
+.container {
+  display: grid;
+  width: cover;
+  height: cover;
+  grid-template-areas: "header header header header" "main main main main" "galeria galeria galeria galeria" "footer footer footer footer";
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 3fr;
+  background-color: brown;
+  border: none;
+  font-family: "Rubik", sans-serif;
+}
+
+/*contenido header*/
+.header {
+  grid-area: 1;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  color: black;
+  background-color: aquamarine;
+}
+
+.headertitulo {
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+
+/*contenido main*/
+.main {
+  grid-area: 2;
+  color: black;
+  display: grid;
+  border: none;
+}
+
+.tituloyonko {
+  color: black;
+  text-align: center;
+}
+
+.ruleta {
+  grid-area: 3;
+  color: black;
+}
+
+.footer {
+  background-color: blueviolet;
+  grid-area: 4;
+  color: black;
+}
+
+@media (min-width 500px) {
+  @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Rubik:wght@300&family=Water+Brush&display=swap");
+  .container {
+    margin: 0%;
+    display: grid;
+    width: cover;
+    height: cover;
+    grid-template-areas: "header header " "main galeria" "main galeria" "footer footer";
+    grid-template-columns: 1fr 1fr;
+    background-color: brown;
+    border: none;
+    font-family: "Rubik", sans-serif;
+  }
+
+  /*contenido header*/
+  .header {
+    grid-area: 1;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    background-color: blue;
+  }
+
+  .headertitulo {
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  }
+
+  /*contenido main*/
+  .main {
+    grid-area: 2;
+    color: black;
+    display: grid;
+    border: none;
+  }
+
+  .tituloyonko {
+    color: black;
+    text-align: center;
+  }
+
+  .ruleta {
+    grid-area: 3;
+    color: black;
+  }
+
+  .footer {
+    background-color: blueviolet;
+    grid-area: 4;
+    color: black;
+  }
+}/*# sourceMappingURL=estilos.css.map */
